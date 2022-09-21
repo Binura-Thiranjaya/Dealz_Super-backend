@@ -1,0 +1,7 @@
+When a item is billing sales modules ask for the customer details with ,
+
+Customer_Id Primary key
+Mobile Number - Unique
+Customer Name,
+Loyalty Code,
+Date Created,

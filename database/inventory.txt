@@ -1,0 +1,12 @@
+Inventory is used to store the product that is available in the store,
+
+Inventory id Auto Incremented,
+supplier_id is the id of the supplier who supplies the product,
+product_id is the id of the product,
+quantity is the quantity of the product,
+price is the price of the product,
+date is the date when the product is added to the inventory,
+status is the status of the product whether it is available or not.
+
+
+

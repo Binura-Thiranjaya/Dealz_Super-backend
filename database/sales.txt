@@ -1,0 +1,27 @@
+Sales is used store the transaction done by the customer,
+
+Sales_Id is the primary key of the table.
+User_Id is the foreign key of the table.
+Customer_Id is the foreign key of the table.
+Product_Id is the foreign key of the table.
+Quantity is the quantity of the product sold.
+Sales_item json data type is used to store the product details.
+Discount is the discount given to the customer.
+Tax is the tax given to the customer.
+Balance is the balance of the customer.
+Total is the total amount of the transaction.
+Date is the date of the transaction.
+Payment is the payment method of the customer.
+
+
+The table is created using the following code:
+
+CREATE TABLE IF NOT EXISTS `sales` (
+  `Sales_Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Product_Id` int(11) NOT NULL,
+  `Total` int(11) NOT NULL,
+  `Date` date NOT NULL,
+  PRIMARY KEY (`Sales_Id`),
+  KEY `Product_Id` (`Product_Id`),
+  CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`Product_Id`) REFERENCES `inventory` (`Product_Id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;

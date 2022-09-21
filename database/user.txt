@@ -1,0 +1,13 @@
+User Table is used to store the user information. The user information is used to authenticate the user and to store the user information.
+
+The user table has the following fields:
+
+User id Auto Incremented,
+username of the user primary key,
+password of the user,
+email of the user,
+phone of the user,
+address of the user,
+role of the user,
+status of the user,
+date of the user,

@@ -1,0 +1,13 @@
+Products is used store the details of the products that are available for sale.
+
+barcode of the item,
+name  of the item,
+selling Price of the item,
+buying Price of the item,
+profit  of the item,
+supplier of the item,
+category of the item,
+reorder level of the item,
+quantity of the item,
+brand of the item,
+

@@ -1,0 +1,16 @@
+Supplier is used to store the supplier information. Supplier is used to store the supplier information.
+
+Supplier_ID auto Incremented,
+Supplier_Name ,
+Supplier_Address ,
+Supplier_Phone ,
+Supplier_Email ,
+Supplier_Description,
+Total_Purchase,
+Total_Payment,
+Total_Due,
+Date,
+Time,
+Supplier_Created_By,
+
+
