@@ -1,0 +1,43 @@
+The project structure is as follows:
+
+## controller is used to handle the requests and responses such as get, post, put, delete.
+
+## database is used to define the database tables and the relationships between them.
+
+## middleware is used to define the middleware functions such as authentication and authorization.
+
+## models is used to define the schema of the database such as user schema, product schema, etc.
+
+## repository is used to define the database operations such as insert, update, delete, etc.
+
+## routes is used to define the routes of the application such as /api/user, /api/product, etc.
+
+## services is used to define the services of the application such as user service, product service, etc.
+
+## test is used to test the application using mocha and chai.
+
+## utils is used to store the utility functions such as error handling, etc.
+
+## node_modules is used to store the dependencies of the application.
+
+## app is the entry point of the application.
+
+## server is used to start the server.
+
+## readme is used to define the readme file of the application.
+
+## license is used to define the license of the application.
+
+## .env file is used to store environment variables such as database connection string, etc.
+
+## .gitignore file is used to ignore files and folders from git repository.
+
+## package.json file is used to store npm packages.
+
+## package-lock.json file is used to store npm packages such as version, etc.
+
+Read more about the project structure in the [Developer Guide](Developer_Guide).
+
+
+
+
