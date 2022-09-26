@@ -9,13 +9,13 @@ const app = express();
 //import db from "./utils/dbConnect.js";
 
 //Import Routes
-//import apiRouter from "./routes/index.js";
+import apiRouter from "./routes/index.js";
 
 app.use(cors());//Allow Cross-Origin Requests
 app.use(express.json());//Parse JSON bodies
 app.use(bodyParser.json());//Parse URL-encoded bodies
 
- //app.use("/api", apiRouter);
+ app.use("/dealz-super", apiRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello World !");
