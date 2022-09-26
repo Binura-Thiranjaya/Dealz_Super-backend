@@ -1,7 +1,7 @@
 import {
     saveProduct,
     getProducts,
-    geProductsById,
+    getProductsById,
     updateProduct,
     deleteProduct
 } from './product.repository.js';
@@ -9,7 +9,7 @@ import {
 export {
     saveProduct,
     getProducts,
-    geProductsById,
+    getProductsById,
     updateProduct,
     deleteProduct
 }

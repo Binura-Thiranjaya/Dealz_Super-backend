@@ -1,7 +1,7 @@
 import {
     saveProduct,
     getProducts,
-    geProductsById,
+    getProductsById,
     updateProduct,
     deleteProduct
 } from '../repository/index.js';
@@ -35,7 +35,7 @@ export const getProductService = async () => {
 
 export const getProductByIdService = async (id) => {
     try {
-        const product = await geProductsById(id);
+        const product = await getProductsById(id);
         return product;
     } catch (err) {
         throw new AppError(err.message, 500);
