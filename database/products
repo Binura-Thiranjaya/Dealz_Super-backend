@@ -11,3 +11,21 @@ reorder level of the item,
 quantity of the item,
 brand of the item,
 
+Table Structure
+
+id auto increment primary key
+barcode of the item,
+name  of the item,
+selling Price of the item,
+buying Price of the item,
+profit  of the item,
+supplier of the item,
+category of the item,
+reorder level of the item,
+quantity of the item,
+brand of the item,
+
+Table Data
+
+
+

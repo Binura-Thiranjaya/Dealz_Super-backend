@@ -1,0 +1,12 @@
+Loyalty manager is used to store the customer Loyalty points,Loyalty points are used to redeem the products.
+
+Table Structure
+
+id - Primary Key
+customer_id - Foreign Key
+points - Loyalty points
+created_at - Date and time of creation
+updated_at - Date and time of updation
+
+
+
