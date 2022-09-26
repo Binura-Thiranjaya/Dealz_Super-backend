@@ -16,4 +16,4 @@ productRouter.delete('/delete/:id', deleteProductController);
 productRouter.put('/update/:id', updateProductController);
 
 
-export default vendorRouter;
+export default productRouter;

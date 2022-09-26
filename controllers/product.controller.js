@@ -2,14 +2,14 @@ import {
     saveProductService,
     getProductService,
     updateProductService,
-    deleteProductService
-    getProductByIdController
+    deleteProductService,
+    getProductByIdService
 } from '../services/index.js'
 import Success from '../utils/success.js';
 
 export const saveProductController = async (req,res)=>{
     try {
-        const product = await saveVendorService(req.body);
+        const product = await saveProductService(req.body);
         res.json(Success(product,"Product saved successfully"));
     } catch (err) {
         res.status(500).json(err);
