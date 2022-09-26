@@ -2,14 +2,13 @@ import AppError from '../utils/appError.js';
 import db from '../utils/dbConnect.js';
 
 export const saveProduct = async (data) => {
-     try {      
         const sqlInsert = "INSERT INTO product (product_id, barcode	, product_name, last_updated_user,status)  VALUES (?,?,?,?,?)";
         const { product_id, barcode	, product_name, last_updated_user, status } = data;
         const result = await db.query(sqlInsert, [product_id, barcode	, product_name, last_updated_user, status]);
-        return Promise.resolve(result)
-    } catch (err) {
-        throw new AppError(err.message, 500);
-    }
+        return Promise.resolve(result).catch((err) => {
+            throw new AppError(err.message, 500);
+        }
+    );
 }
 
 export const getProducts = async () => {
@@ -28,15 +27,13 @@ export const getProductsById = async (id) => {
     });
 }
 
-export const updateProduct = async (data) => {
-    try {
-        const sqlUpdate = "UPDATE product SET barcode = ?, product_name = ?, last_updated_user = ?, status = ? WHERE product_id = ?";
-        const { product_id, barcode	, product_name, last_updated_user, status } = data;
-        const result = await db.query(sqlUpdate, [barcode	, product_name, last_updated_user, status, product_id]);
-        return Promise.resolve(result);
-    } catch (err) {
-        throw new AppError(err.message, 500);
-    }
+export const updateProduct = async (id,data) => {
+    const sqlUpdate = "UPDATE product SET barcode = ?, product_name = ?, last_updated_user = ?, status = ? WHERE product_id = ?";
+    const { barcode	, product_name, last_updated_user, status } = data;
+    const result = await db.query(sqlUpdate, [barcode	, product_name, last_updated_user, status, id]);
+    return Promise.resolve(result).catch((err) => {
+        throw new AppError("Internal Failure", 500);
+    });
 }
 
 export const deleteProduct = async (id) => {
