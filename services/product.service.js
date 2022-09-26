@@ -57,7 +57,7 @@ export const updateProductService = async (id, data) => {
     }catch (err) {
         throw new AppError(err.message, 500);
     }
-
+}
 export const deleteProductService = async (id) => {
     try {
         const product = await deleteProduct(id);

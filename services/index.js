@@ -4,7 +4,7 @@ import {
     updateProductService,
     deleteProductService,
     getProductByIdService
-} from '../services/product.service.js'
+} from './product.service.js'
 
 export {
     saveProductService,

@@ -4,7 +4,7 @@ import {
     geProductsById,
     updateProduct,
     deleteProduct
-} from '../repository/product.repository';
+} from './product.repository.js';
 
 export {
     saveProduct,
