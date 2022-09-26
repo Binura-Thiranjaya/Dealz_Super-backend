@@ -1,15 +1,16 @@
 import {
-    saveProductController
-    getProductsController
-    getProductByIdController
-    deleteProductController
+    saveProductController,
+    getProductsController,
+    getProductByIdController,
+    deleteProductController,
     updateProductController
-} from '../controllers/index.js'
+} from './product.controller.js'
+
 
 export {
-    saveProductController
-    getProductsController
-    getProductByIdController
-    deleteProductController
+    saveProductController,
+    getProductsController,
+    getProductByIdController,
+    deleteProductController,
     updateProductController
 }
