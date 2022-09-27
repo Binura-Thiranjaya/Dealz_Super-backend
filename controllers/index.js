@@ -4,6 +4,7 @@ import {
     getProductByIdController,
     deleteProductController,
     updateProductController
+    // getProductByNameController
 }   from '../controllers/product.controller.js';
 
 
@@ -13,4 +14,5 @@ export {
     getProductByIdController,
     deleteProductController,
     updateProductController
+    // getProductByNameController
 }

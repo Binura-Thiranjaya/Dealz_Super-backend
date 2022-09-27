@@ -4,6 +4,7 @@ import {
     updateProductService,
     deleteProductService,
     getProductByIdService
+    // getProductByNameService
 } from './product.service.js'
 
 export {
@@ -12,4 +13,5 @@ export {
     updateProductService,
     deleteProductService,
     getProductByIdService
+    // getProductByNameService
 }

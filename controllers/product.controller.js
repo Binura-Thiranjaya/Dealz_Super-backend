@@ -4,6 +4,7 @@ import {
     updateProductService,
     deleteProductService,
     getProductByIdService
+    // getProductByNameService
 } from '../services/index.js'
 import Success from '../utils/success.js';
 
@@ -22,6 +23,7 @@ export const getProductsController = async (req,res)=>{
         res.json(Success(products,"Products fetched successfully"));
     } catch (err) {
         res.status(500).json(err);
+        console.log(err);
     }
 }
 
@@ -33,6 +35,15 @@ export const getProductByIdController = async (req,res)=>{
         res.status(500).json(err);
     }
 }
+
+// export const getProductByNameController = async (req,res)=>{
+//     try {
+//         const product = await getProductByNameService(req.params.name);
+//         res.json(Success(product,"Product fetched successfully"));
+//     } catch (err) {
+//         res.status(500).json(err);
+//     }
+// }
 
 export const deleteProductController = async (req,res)=>{
     try {
