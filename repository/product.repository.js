@@ -13,6 +13,7 @@ export const saveProduct = async (data) => {
 }
 //--------------------------------------Get all products--------------------------------------------------
 export const getProducts = async () => {
+    //test comment
     const sqlSelect = "SELECT * FROM product";
     const res = await db.query(sqlSelect);
     console.log(res);
